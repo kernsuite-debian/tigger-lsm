@@ -1,0 +1,10 @@
+.debhelper/
+files
+python-tigger-lsm.debhelper.log
+python-tigger-lsm.postinst.debhelper
+python-tigger-lsm.prerm.debhelper
+python-tigger-lsm.substvars
+python-tigger-lsm/
+tigger-lsm.debhelper.log
+tigger-lsm.substvars
+tigger-lsm/

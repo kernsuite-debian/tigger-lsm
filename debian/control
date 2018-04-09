@@ -1,15 +1,13 @@
 Source: tigger-lsm
 Section: python
-Priority: extra
+Priority: optional
 Maintainer: KERN packaging <packaging@kernsuite.info>
 Build-Depends:
  debhelper (>= 8.0.0),
  dh-python,
  python-all,
  python-setuptools,
- python-kittens,
- python-qt4,
- python-qwt5-qt4
+ python-astro-kittens,
 Standards-Version: 3.9.7
 Homepage: https://github.com/ska-sa/tigger-lsm
 X-Python-Version: 2.7
@@ -18,9 +16,9 @@ Package: python-tigger-lsm
 Architecture: any
 Depends: ${python:Depends}, ${misc:Depends}, ${shlibs:Depends}, python-kittens,
  python-pyfits, python-astlib, python-scipy, python-numpy
-Description: FITS and MeqTrees LSM viewer, python 2 library
+Description: FITS and MeqTrees LSM file tools
 
 Package: tigger-lsm
 Architecture: any
-Depends: python-tigger-lsm
+Depends: python-tigger-lsm, ${misc:Depends}
 Description: dependency package for FITS and MeqTrees LSM viewer
