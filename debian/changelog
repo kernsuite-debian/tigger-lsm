@@ -1,3 +1,9 @@
+tigger-lsm (1.4.2-1kern3) bionic; urgency=medium
+
+  * fix dependency issue
+
+ -- KERN packaging <packaging@kernsuite.info>  Mon, 09 Apr 2018 13:43:27 +0000
+
 tigger-lsm (1.4.2-1kern2) bionic; urgency=medium
 
   * add debian files
