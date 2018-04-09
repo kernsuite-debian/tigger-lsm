@@ -8,3 +8,8 @@ python-tigger-lsm/
 tigger-lsm.debhelper.log
 tigger-lsm.substvars
 tigger-lsm/
+python-astro-tigger-lsm.debhelper.log
+python-astro-tigger-lsm.postinst.debhelper
+python-astro-tigger-lsm.prerm.debhelper
+python-astro-tigger-lsm.substvars
+python-astro-tigger-lsm/

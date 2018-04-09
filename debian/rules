@@ -2,7 +2,7 @@
 # -*- makefile -*-
 #
 export DH_VERBOSE=1
-export PYBUILD_NAME=tigger-lsm
+export PYBUILD_NAME=astro-tigger-lsm
 
 %:
 	dh $@ --with python2 --buildsystem=pybuild

@@ -12,7 +12,8 @@ Standards-Version: 3.9.7
 Homepage: https://github.com/ska-sa/tigger-lsm
 X-Python-Version: 2.7
 
-Package: python-tigger-lsm
+Package: python-astro-tigger-lsm
+Replaces: python-tigger-lsm
 Architecture: any
 Depends:
  ${python:Depends},
