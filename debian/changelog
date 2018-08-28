@@ -1,3 +1,10 @@
+tigger-lsm (1.4.2-1kern5) bionic; urgency=medium
+
+  [ Gijs Molenaar ]
+  * fix inter dep
+
+ -- KERN packaging <packaging@kernsuite.info>  Wed, 29 Aug 2018 01:42:12 +0200
+
 tigger-lsm (1.4.2-1kern4) bionic; urgency=medium
 
   * rename package to astro-tgger-lsm
