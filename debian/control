@@ -28,5 +28,5 @@ Description: FITS and MeqTrees LSM file tools
 
 Package: tigger-lsm
 Architecture: any
-Depends: python-tigger-lsm, ${misc:Depends}
+Depends: python-astro-tigger-lsm, ${misc:Depends}
 Description: dependency package for FITS and MeqTrees LSM viewer
