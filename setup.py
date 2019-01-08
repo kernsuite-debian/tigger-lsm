@@ -3,9 +3,9 @@
 from __future__ import print_function
 from setuptools import setup, find_packages
 
-__version__ = "1.4.2"
+__version__ = "1.5.0"
 
-requirements = ['astro_kittens', 'numpy', 'scipy', 'astlib', 'pyfits']
+requirements = ['astro_kittens', 'numpy', 'scipy', 'astlib', 'astropy', 'future']
 
 scripts = [
     'Tigger/bin/tigger-convert',
@@ -22,7 +22,7 @@ extras_require = {
 
 
 setup(
-    name ="astro-tigger-lsm",
+    name="astro-tigger-lsm",
     version=__version__,
     packages=find_packages(),
     extras_require=extras_require,
