@@ -1,4 +1,4 @@
-.pybuild
+.pybuild/
 *.egg-info/
 dist/*
 build/
