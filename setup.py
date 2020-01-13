@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-from __future__ import print_function
+
 from setuptools import setup, find_packages
 
-__version__ = "1.5.0"
+__version__ = "1.6.0"
 
 requirements = ['astro_kittens', 'numpy', 'scipy', 'astlib', 'astropy', 'future']
 
