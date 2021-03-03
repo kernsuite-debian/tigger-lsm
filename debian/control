@@ -3,31 +3,14 @@ Section: python
 Priority: optional
 Maintainer: KERN packaging <packaging@kernsuite.info>
 Build-Depends:
- debhelper (>= 8.0.0),
+ debhelper (>=11),
  dh-python,
- python-all,
- python-setuptools,
+ python3-all,
  python3-setuptools,
- python-astro-kittens,
  python3-astro-kittens
-Standards-Version: 3.9.7
+Standards-Version: 4.5.0
 Homepage: https://github.com/ska-sa/tigger-lsm
-X-Python-Version: 2.7
-X-Python3-Version: 3.6
-
-Package: python-astro-tigger-lsm
-Replaces: python-tigger-lsm
-Architecture: any
-Depends:
- ${python:Depends},
- ${misc:Depends},
- ${shlibs:Depends},
- python-astro-kittens,
- python-pyfits,
- python-astlib,
- python-scipy,
- python-numpy
-Description: FITS and MeqTrees LSM file tools for python 2.
+X-Python3-Version: >= 3.6
 
 Package: python3-astro-tigger-lsm
 Architecture: any
@@ -36,7 +19,7 @@ Depends:
  ${misc:Depends},
  ${shlibs:Depends},
  python3-astro-kittens,
- python3-pyfits,
+ python3-astropy,
  python3-astlib,
  python3-scipy,
  python3-numpy
@@ -44,5 +27,5 @@ Description: FITS and MeqTrees LSM file tools for python 3.
 
 Package: tigger-lsm
 Architecture: any
-Depends: python-astro-tigger-lsm, ${misc:Depends}
+Depends: python3-astro-tigger-lsm, ${misc:Depends}
 Description: dependency package for FITS and MeqTrees LSM viewer
