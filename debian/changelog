@@ -1,3 +1,10 @@
+tigger-lsm (1.7.2-1kern1) focal; urgency=medium
+
+  [ Athanaseus Javas Ramaila ]
+  * New upstream version 1.7.2
+
+ -- KERN packaging <packaging@kernsuite.info>  Wed, 22 Feb 2023 11:25:00 +0000
+
 tigger-lsm (1.7.1-1kern1) focal; urgency=medium
 
   [ Athanaseus Javas Ramaila ]

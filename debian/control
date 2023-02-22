@@ -8,7 +8,7 @@ Build-Depends:
  python3-all,
  python3-setuptools,
  python3-astro-kittens
-Standards-Version: 4.5.0
+Standards-Version: 4.6.0
 Homepage: https://github.com/ska-sa/tigger-lsm
 X-Python3-Version: >= 3.6
 
