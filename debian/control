@@ -3,14 +3,14 @@ Section: python
 Priority: optional
 Maintainer: KERN packaging <packaging@kernsuite.info>
 Build-Depends:
- debhelper (>=11),
+ debhelper-compat (= 13),
  dh-python,
  python3-all,
  python3-setuptools,
  python3-astro-kittens
-Standards-Version: 4.6.0
+Standards-Version: 4.6.2.0
 Homepage: https://github.com/ska-sa/tigger-lsm
-X-Python3-Version: >= 3.6
+X-Python3-Version: >= 3.10
 
 Package: python3-astro-tigger-lsm
 Architecture: any
