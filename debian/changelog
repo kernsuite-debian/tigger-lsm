@@ -1,3 +1,11 @@
+tigger-lsm (1.7.3-1kern1) UNRELEASED; urgency=medium
+
+  [ Athanaseus Javas Ramaila ]
+  * New upstream version 1.7.3
+  * Build for jammy
+
+ -- KERN packaging <packaging@kernsuite.info>  Thu, 08 Feb 2024 13:15:46 +0000
+
 tigger-lsm (1.7.2-1kern1) focal; urgency=medium
 
   [ Athanaseus Javas Ramaila ]
