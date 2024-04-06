@@ -1,4 +1,4 @@
-tigger-lsm (1.7.3-1kern1) UNRELEASED; urgency=medium
+tigger-lsm (1.7.3-1kern1) jammy; urgency=medium
 
   [ Athanaseus Javas Ramaila ]
   * New upstream version 1.7.3
