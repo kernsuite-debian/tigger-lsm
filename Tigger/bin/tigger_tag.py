@@ -65,7 +65,7 @@ def transfer_tags(fromlsm, lsm, output, tags, tolerance, tigger):
     model.save(output)
 
 
-if __name__ == '__main__':
+def main():
     import Kittens.utils
 
     _verbosity = Kittens.utils.verbosity(name="convert-model")
@@ -172,13 +172,15 @@ Saves the result to an LSM file given by -o/--output.
 
     # This is where we accumulate the result of selection arguments, until we hit the first tagging argument.
     # Initially None, meaning no explicit selection
+    global selected_ids
     selected_ids = None
 
     # This is where we put the selection when we hit the first tagging argument.
+    global selection
     selection = None
 
     # this is set to true when the selection is listed
-    listed = False
+    global listed
     # set to true when the model is modified
     modified = False
 
@@ -255,7 +257,7 @@ Saves the result to an LSM file given by -o/--output.
     for arg in rem_args[1:]:
         # Match either the SELTAG<>SELVAL, or the TAG=[TYPE:]VALUE, or the [+!/]TAG forms
         # If none match, assume the NAME form
-        mselcomp = re.match("^(?i)([^=<>!.]+)(%s)([^dms]+)([dms])?" % "|".join(
+        mselcomp = re.match("(?i)^([^=<>!.]+)(%s)([^dms]+)([dms])?" % "|".join(
             [key.replace('.', '\.') for key in list(select_predicates.keys())]), arg)
         mseltag = re.match("=(.+)$", arg)
         mset = re.match("^(.+)=((bool|int|str|float|complex):)?(.+)$", arg)
@@ -300,7 +302,7 @@ Saves the result to an LSM file given by -o/--output.
             # else some other type is specified -- use it to convert the value
             elif typename:
                 try:
-                    newval = getattr(__builtin__, typename)(value)
+                    newval = getattr(globals()["__builtin__"], typename)(value)
                 except:
                     print("Can't parse \"%s\" as a value of type %s" % (value, typename))
                     sys.exit(2)
