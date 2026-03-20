@@ -5,12 +5,16 @@ Maintainer: KERN packaging <packaging@kernsuite.info>
 Build-Depends:
  debhelper-compat (= 13),
  dh-python,
+ pybuild-plugin-pyproject,
  python3-all,
+ python3-numpy,
  python3-setuptools,
- python3-astro-kittens
-Standards-Version: 4.6.2.0
+ python3-astro-kittens,
+ python3-poetry-core,
+ python3-wheel
+Standards-Version: 4.7.2.0
 Homepage: https://github.com/ska-sa/tigger-lsm
-X-Python3-Version: >= 3.10
+X-Python3-Version: >= 3.12
 
 Package: python3-astro-tigger-lsm
 Architecture: any
@@ -20,7 +24,6 @@ Depends:
  ${shlibs:Depends},
  python3-astro-kittens,
  python3-astropy,
- python3-astlib,
  python3-scipy,
  python3-numpy
 Description: FITS and MeqTrees LSM file tools for python 3.
